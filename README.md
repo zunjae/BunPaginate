@@ -55,7 +55,7 @@ abstract class BunPaginate(recyclerView: RecyclerView, val threshold: Int = 9)
 ```
 paginator = object : RecyclerViewPaginator(recyclerViewShows) {
   override fun isLastPage(): Boolean {
-    return a variable which determines whether you're on the lats page
+    return a variable which determines whether you're on the last page
   }
 
   override fun isLoading(): Boolean {
