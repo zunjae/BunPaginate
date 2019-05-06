@@ -9,7 +9,7 @@
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class RecyclerViewPaginator(recyclerView: RecyclerView, val threshold: Int = 9)
+abstract class BunPaginate(recyclerView: RecyclerView, val threshold: Int = 9)
   : RecyclerView.OnScrollListener() {
 
   var currentPage: Int = 1
