@@ -9,16 +9,16 @@
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class BunPaginate(recyclerView: RecyclerView, val threshold: Int = 9)
+abstract class RecyclerViewPaginator(recyclerView: RecyclerView, val threshold: Int = 9)
   : RecyclerView.OnScrollListener() {
 
   var currentPage: Int = 1
 
-  private val layoutManager: RecyclerView.LayoutManager?
+  private val layoutManager: RecyclerView.LayoutManager
 
   init {
     recyclerView.addOnScrollListener(this)
-    this.layoutManager = recyclerView.layoutManager
+    this.layoutManager = recyclerView.layoutManager!!
   }
 
   override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
@@ -28,7 +28,7 @@ abstract class BunPaginate(recyclerView: RecyclerView, val threshold: Int = 9)
       return
     }
 
-    val visibleItemCount = layoutManager!!.childCount
+    val visibleItemCount = layoutManager.childCount
     val totalItemCount = layoutManager.itemCount
     val firstVisibleItemPosition = (layoutManager as LinearLayoutManager).findFirstVisibleItemPosition()
 
