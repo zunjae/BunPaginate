@@ -53,7 +53,7 @@ abstract class BunPaginate(recyclerView: RecyclerView, val threshold: Int = 9)
 3) Create an instance of `BunPaginate` like this
 
 ```
-paginator = object : RecyclerViewPaginator(recyclerViewShows) {
+paginator = object : BunPaginate(recyclerViewShows) {
   override fun isLastPage(): Boolean {
     return a variable which determines whether you're on the last page
   }
