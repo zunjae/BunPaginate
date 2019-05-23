@@ -71,10 +71,10 @@ paginator = object : BunPaginate(recyclerViewShows) {
 4) Attach the Paginator to the RecyclerView
 
 ```
-recyclerViewS.addOnScrollListener(paginator)
+recyclerView.addOnScrollListener(paginator)
 ```
 
-It's highly recommended to use ViewModels here https://developer.android.com/topic/libraries/architecture/viewmodel
+It's highly recommended to use ViewModels. Please check https://developer.android.com/topic/libraries/architecture/viewmodel
 
 # DISCLAIMER:
 untested
