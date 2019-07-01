@@ -80,4 +80,4 @@ It's highly recommended to use ViewModels. Please check https://developer.androi
 untested
 
 # LICENSE:
-No credits required in order to use this. I got tired of seeing shit implementations of a very basic paginator. With this, you'll be able to create a proper paginator using loading indicators, retry mechanics etc.
+No credits required in order to use this. Feel free to pretend you made this. I got tired of seeing shit implementations of a very basic paginator. With this, you'll be able to create a proper paginator using loading indicators, retry mechanics etc.
