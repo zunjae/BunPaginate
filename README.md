@@ -81,4 +81,4 @@ untested
 
 ## License
 
-FFTPYMT: Feel free to pretend you made this
+There's no license associated with this project. You may copy the code and modify it to your heart's content. You may not send me questions regarding this project. You're on your own.
