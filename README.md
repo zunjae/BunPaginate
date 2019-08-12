@@ -8,11 +8,11 @@
 ```kotlin
 paginator = object : BunPaginate(recyclerViewShows) {
   override fun isLastPage(): Boolean {
-    return a variable which determines whether you're on the last page
+    // return a variable which determines whether you're on the last page
   }
 
   override fun isLoading(): Boolean {
-    return a variable which determines whether data is being loaded
+    // return a variable which determines whether data is being loaded
   }
 
   override fun loadMore(pageNumber: Int) {
@@ -26,8 +26,6 @@ paginator = object : BunPaginate(recyclerViewShows) {
 ```
 recyclerView.addOnScrollListener(paginator)
 ```
-
-It's highly recommended to use ViewModels. Please check https://developer.android.com/topic/libraries/architecture/viewmodel
 
 ## License
 
