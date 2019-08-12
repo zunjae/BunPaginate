@@ -1,6 +1,6 @@
 # BunPaginate
 
-* Not a library, copy and paste in your projects folder
+* Add pagination to your RecyclerView
 
 1) Include the BunPaginate.kt file into your project
 2) Create an instance of `BunPaginate` like this
